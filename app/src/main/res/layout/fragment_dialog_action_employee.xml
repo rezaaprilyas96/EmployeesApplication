@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_id_employee"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_delete_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_svg" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:background="@drawable/background_stroke_radius_10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:padding="@dimen/size_16dp"
+        android:textColorHint="@color/gray6"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_salary_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6dp"
+        android:background="@drawable/background_stroke_radius_10"
+        android:hint="@string/salary"
+        android:inputType="number"
+        android:padding="@dimen/size_16dp"
+        android:textColorHint="@color/gray6"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_age_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6dp"
+        android:background="@drawable/background_stroke_radius_10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="@dimen/size_16dp"
+        android:textColorHint="@color/gray6"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_simpan_or_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:background="@drawable/background_young_yellow_10_radius"
+        android:text="@string/simpan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</androidx.appcompat.widget.LinearLayoutCompat>

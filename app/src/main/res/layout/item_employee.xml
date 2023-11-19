@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_employee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/size_12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reza Aprilyas"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:text="ID Employee"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_employee_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="24"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="@string/salary"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_employee_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:gravity="center"
+            android:text="Rp. 20.000.000"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="@string/age"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_employee_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:gravity="center"
+            android:text="27"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
